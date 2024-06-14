@@ -1,0 +1,10 @@
+pyrogram
+pyromod
+tgcrypto
+requests
+anikimiapi
+#git+https://github.com/yourusername/anikimiapi.git
+
+# for web
+aiohttp
+
