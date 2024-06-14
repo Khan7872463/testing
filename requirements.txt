@@ -2,8 +2,8 @@ pyrogram
 pyromod
 tgcrypto
 requests
-anikimiapi
-#git+https://github.com/yourusername/anikimiapi.git
+#anikimiapi
+git+https://github.com/Khan7872463/anikimiapi.git
 
 # for web
 aiohttp
