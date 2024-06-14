@@ -6,7 +6,7 @@ from logging.handlers import RotatingFileHandler
 BOT_TOKEN = os.environ.get("BOT_TOKEN", "")
 APP_ID = int(os.environ.get("APP_ID", ""))
 API_HASH = os.environ.get("API_HASH", "")
-BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
+BOT_WORKERS = int(os.environ.get("BOT_WORKERS", "4"))
 PORT = os.environ.get("PORT", "8080")
 auth_token = os.environ.get("AUTH_TOKEN","zrmZ1fem9erEK%2BbBQpSqldBcP0HJ8PxyIbDw3HWlCfiGe4kI3MVGq4tK6OGC3s0WdIqPGRP5FvmMsQvQWe8t6g%3D%3D")
 gogoanime_token = os.environ.get("GOGOANIME_TOKEN","58p11ds5010l3vbuoh9v46bm72")
