@@ -2,6 +2,7 @@ pyrogram
 pyromod
 tgcrypto
 requests
+lxml_html_clean
 #anikimiapi
 git+https://github.com/Khan7872463/anikimiapi.git
 
