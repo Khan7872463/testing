@@ -15,9 +15,18 @@ anime_api = AniKimi(gogoanime_token=gogoanime_token, auth_token=auth_token)
 async def start(client, message):
     await message.reply_text("Hello! Send me the name of the anime you want details for.")
 
-@app.on_message(filters.text & ~filters.command(["search"]))
+@app.on_message(filters.command(["search"]))
 async def search_anime(client, message):
-    query = message.text
+    mak = message.text
+    if '/search' == message.text:
+        await message.reply_text(
+            'Command must be used like this\n/anime <name of anime>\nexample: /anime One Piece',
+            reply_markup=InlineKeyboardMarkup([[
+                InlineKeyboardButton("Example", url="https://media1.tenor.com/images/eaac56a1d02536ed416b5a080fdf73ba/tenor.gif?itemid=15075442")
+            ]])
+        )
+        return
+    query = " ".join(mak.split()[1:])
     try:
         search_results = anime_api.search_anime(query=query)
         if not search_results:
