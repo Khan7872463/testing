@@ -7,7 +7,7 @@ from pyrogram.enums import ParseMode
 import sys
 from datetime import datetime
 
-from config import API_HASH, APP_ID, LOGGER, BOT_TOKEN, BOT_WORKERS, PORT
+from config import API_HASH, API_ID, LOGGER, BOT_TOKEN, BOT_WORKERS, PORT
 
 
 
